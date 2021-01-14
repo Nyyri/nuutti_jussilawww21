@@ -1,28 +1,46 @@
 body {
-    background-color: rgb(69, 176, 202);
-
+    background-color: rgb(4, 180, 134);
+    color: rgb(234, 246, 222);
 }
 
 h1 {
     border-bottom: 1px dotted rgba(255, 0, 0, 0.25);
-    color: red;
+    color: rgb(190, 0, 0);
     font-size: 16px;
     font-family: 'Kufam';
 }
 
+article {
+    width: 600px;
+}
+
+article > p > img {
+    float: right;
+}
+
 a {
-    color: rgb(30, 184, 138);
+    color:rgb(28,111,186);
+    
 }
 
 a:visited {
-    color: rgb(27, 160, 120);
+    color:rgb(38,74,135);
+    
 }
 
 a:hover {
-    color: rgb(35, 228, 170);
+    color:rgb(56,138,229);
 }
 
-figcaption {
+.image_with_caption {
+    width: 200px;
+}
+
+.image_with_caption > img {
+    height: 200px;
+}
+
+.caption {
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
 }
