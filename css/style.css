@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    border-bottom: 1px dotted rgba(255, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(255, 0, 0, 0.25);
     color: rgb(190, 0, 0);
     font-size: 16px;
     font-family: 'Kufam';
