@@ -6,63 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nuutti Jussila">
     <meta name="description" content="HAMK Web-development courses exercises.">
-    <link href="css/style.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="aboutus.html">About us</a>
-        </li>
-        <li>
-            <a href="projects.html">Projects</a>
-        </li>
-        <li>
-            <a href="exercise4.html">Exercise 4</a>
-        </li>
-    </ul>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-palette bg-palette navbar-expand-sm">
+         <div class="container-fluid">
+             <a class="navbar-brand" href="index.html">nuutti_jussilawww21</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h1>Web development course excercises</h1>
+            <div class="collapse navbar-collapse" id="navigation">
+                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercise4.html">Exercise 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Exercise 1 - Text formatting</h2>
-    <h3>Top heading of the exercise</h3>
-    <div class="image_with_caption">
-        <img src="images/exrc1/goose.png" alt="An image of a goose.">
-        <div class="caption">An image of a goose that is in no shape or form relevant to the page.</div>
+    <div class="container-fluid">
+        <h1>Web development course excercises</h1>
+
+        <!-- Exercise Tabs -->
+        <div class="nav nav-tabs d-flex flex-column flex-sm-row" id="tab-nav" role="tablist">
+                <a class="nav-link flex-sm-fill text-sm-center" id="tab-nav-exrc1" data-bs-toggle="tab" href="#exrc1-content" role="tab" aria-controls="excr1-content" aria-selected="false">Exercise 1</a>
+                <a class="nav-link flex-sm-fill text-sm-center" id="tab-nav-exrc2" data-bs-toggle="tab" href="#exrc2-content" role="tab" aria-controls="excr2-content" aria-selected="false">Exercise 2</a>
+                <a class="nav-link flex-sm-fill text-sm-center" id="tab-nav-exrc3" data-bs-toggle="tab" href="#exrc3-content" role="tab" aria-controls="excr3-content" aria-selected="false">Exercise 3</a>
+                <a class="nav-link flex-sm-fill text-sm-center" id="tab-nav-exrc4" data-bs-toggle="tab" href="#exrc4-content" role="tab" aria-controls="excr4-content" aria-selected="false">Exercise 4</a>
+                <a class="nav-link flex-sm-fill text-sm-center" id="tab-nav-exrc5" data-bs-toggle="tab" href="#exrc5-content" role="tab" aria-controls="excr5-content" aria-selected="false">Exercise 5</a>
+        </div>
+
+        <!-- Exercise Contents -->
+        <div class="tab-content" id="tab-nav-content">
+            
+            <!-- Instruction -->
+            <div class="tab-pane fade show active content-bg" id="first-show" role="tabpanel">
+                <div class="alert alert-warning" role="alert">
+                    Please select an exercise from the above tabs.
+                </div>
+            </div>
+
+            <!-- Exercise 1 -->
+            <div class="tab-pane fade content-bg" id="exrc1-content" role="tabpanel" aria-labelledby="tab-nav-exrc1">
+                <h2>Exercise 1 - Text formatting</h2>
+                <h3>Top heading of the exercise</h3>
+                <div class="image_with_caption">
+                    <img src="images/exrc1/goose.png" alt="An image of a goose.">
+                    <div class="caption">An image of a goose that is in no shape or form relevant to the page.</div>
+                </div>
+                <p>Some text in a paragraph. This is quite the piece of text; <i>informative</i> and <b>important</b>.</p>
+                <p>A mysterious <a href="https://www.w3schools.com/tags/tag_a.asp">link</a> appears!</p>
+                <p>Another <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">link</a>?! How can this be? (this one opens in a new tab)</p>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="tab-pane fade content-bg" id="exrc2-content" role="tabpanel" aria-labelledby="tab-nav-exrc2">
+                <h2>Exercise 2 - HTML 5</h2>
+                <article>
+                    <h3>Article header</h3>
+                    <p>
+                        <img src="images/exrc2/article1_image.png" alt="An image related to the article." width="100" height="100">
+                        This article tells you about this article, and how it affects us in our day to day lives.<br>
+                        It is most important that this article is read thoroughly and with an open mind.
+                    </p>
+                </article>
+                <address>
+                    Hämeen ammattikorkeakoulu HAMK<br>
+                    PL 230<br>
+                    13101 Hämeenlinna
+                </address>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="tab-pane fade content-bg" id="exrc3-content" role="tabpanel" aria-labelledby="tab-nav-exrc3">
+                <h2>Excercise 3 - CSS</h2>
+                <h3>Using latin characters</h3>
+                <p>You can set the charset to UTF-8 for example.</p>
+                <h3>HTML vs. HTML5</h3>
+                <p>The major difference is the implementation of video and audio into HTML5. There are also many more elements in HTML5.</p>
+                <h3>Video</h3>
+                <video width="320" height="185" controls>
+                    <source src="media/woof.mp4" type="video/mp4">
+                    Sorry! Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="tab-pane fade content-bg" id="exrc4-content" role="tabpanel" aria-labelledby="tab-nav-exrc4">
+                <div class="alert alert-warning" role="alert">
+                    This exercise was done on <a href="exercise4.html" class="alert-link">another page</a>.
+                </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="tab-pane fade content-bg" id="exrc5-content" role="tabpanel" aria-labelledby="tab-nav-exrc5">
+                
+            </div>
+        </div>
     </div>
-    <p>Some text in a paragraph. This is quite the piece of text; <i>informative</i> and <b>important</b>.</p>
-    <p>A mysterious <a href="https://www.w3schools.com/tags/tag_a.asp">link</a> appears!</p>
-    <p>Another <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">link</a>?! How can this be? (this one opens in a new tab)</p>
-
-    <h2>Exercise 2 - HTML 5</h2>
-    <article>
-        <h3>Article header</h3>
-        <p>
-            <img src="images/exrc2/article1_image.png" alt="An image related to the article." width="100" height="100">
-            This article tells you about this article, and how it affects us in our day to day lives.<br>
-            It is most important that this article is read thoroughly and with an open mind.
-        </p>
-    </article>
-    <address>
-        Hämeen ammattikorkeakoulu HAMK<br>
-        PL 230<br>
-        13101 Hämeenlinna
-    </address>
-
-    <h2>Excercise 3 - CSS</h2>
-    <h3>Using latin characters</h3>
-    <p>You can set the charset to UTF-8 for example.</p>
-    <h3>HTML vs. HTML5</h3>
-    <p>The major difference is the implementation of video and audio into HTML5. There are also many more elements in HTML5.</p>
-    <h3>Video</h3>
-    <video width="320" height="185" controls>
-        <source src="media/woof.mp4" type="video/mp4">
-        Sorry! Your browser does not support the video tag.
-    </video>
-
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>

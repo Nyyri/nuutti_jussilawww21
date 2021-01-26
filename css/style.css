@@ -1,14 +1,55 @@
 body {
-    background-color: rgb(4, 180, 134);
-    color: rgb(234, 246, 222);
-    margin-left: 20px;
+    background-color: rgb(14, 16, 22);
+    color:rgb(234, 246, 222);
+    background-image: url(../images/background.jpg);
 }
 
-h1 {
+nav.navbar-palette  a {
+    color: rgb(234, 246, 222);
+}
+
+nav.bg-palette {
+    background-color:rgb(14, 16, 22);
+}
+
+nav.navbar-palette a.active {
+    color:rgb(96, 252, 241);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(94,252,241, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border-color:rgb(96, 252, 241);
+}
+
+div.nav-tabs a.nav-link {
+    background-color: rgb(14, 16, 22);
+    color:rgb(234, 246, 222);
+    border-color: rgb(96, 252, 241);
+}
+
+div.nav-tabs a.nav-link.active {
+    background-color: rgb(14, 16, 22);
+    color:rgb(96, 252, 241);
+    font-weight: bold;
+}
+
+#exrc1-content h2 {
     border-bottom: 2px solid rgba(255, 0, 0, 0.25);
     color: rgb(190, 0, 0);
     font-size: 16px;
     font-family: 'Kufam';
+}
+
+.content-bg {
+    padding: 20px;
+    background-color: rgb(14, 16, 22, 0.9);
+    margin-bottom: 10px;
+    border: 1px solid rgb(96, 252, 241);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 article {
@@ -17,20 +58,6 @@ article {
 
 article > p > img {
     float: right;
-}
-
-a {
-    color:rgb(28,111,186);
-    
-}
-
-a:visited {
-    color:rgb(38,74,135);
-    
-}
-
-a:hover {
-    color:rgb(56,138,229);
 }
 
 .image_with_caption {
@@ -45,3 +72,4 @@ a:hover {
     text-align: center;
     font-size: 13px;
 }
+
