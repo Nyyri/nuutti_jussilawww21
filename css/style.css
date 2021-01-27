@@ -10,6 +10,14 @@ body {
     margin-bottom: 75px;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Kufam';
+}
+
+nav a, .nav a {
+    font-family: 'Bebas Neue', cursive;
+}
+
 nav.navbar-palette  a {
     color: rgb(234, 246, 222);
 }
@@ -28,6 +36,10 @@ nav.navbar-palette a.active {
 
 .navbar-toggler {
     border-color:rgb(96, 252, 241);
+}
+
+.navbar-brand {
+    font-size: 2em;
 }
 
 div.nav-tabs a.nav-link {
@@ -82,6 +94,14 @@ article > p > img {
 video {
     max-width: 100%;
     height: auto;
+}
+
+.link {
+    color:rgb(96, 252, 241);
+}
+
+.link:hover {
+    color:rgb(234, 246, 222);
 }
 
 footer {
