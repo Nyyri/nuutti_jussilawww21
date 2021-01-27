@@ -14,8 +14,13 @@ h1, h2, h3, h4, h5 {
     font-family: 'Kufam';
 }
 
+nav {
+    margin-bottom: 15px;
+}
+
 nav a, .nav a {
     font-family: 'Bebas Neue', cursive;
+    font-size: 1.15em;
 }
 
 nav.navbar-palette  a {
@@ -39,7 +44,7 @@ nav.navbar-palette a.active {
 }
 
 .navbar-brand {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 div.nav-tabs a.nav-link {
@@ -101,6 +106,15 @@ video {
 }
 
 .link:hover {
+    color:rgb(234, 246, 222);
+}
+
+.btn-palette {
+    border: 1px solid rgb(96, 252, 241);
+    color:rgb(234, 246, 222);
+}
+
+.btn-palette:hover{
     color:rgb(234, 246, 222);
 }
 

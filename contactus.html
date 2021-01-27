@@ -34,7 +34,7 @@
                        <a class="nav-link" href="index.html">Exercises</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link active" href="aboutus.html">About us</a>
+                       <a class="nav-link" href="aboutus.html">About us</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="projects.html">Projects</a>
@@ -43,16 +43,40 @@
                        <a class="nav-link" href="exercise4.html">Exercise 4</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="contactus.html">Contact us</a>
+                       <a class="nav-link active" href="contactus.html">Contact us</a>
                    </li>
                </ul>
            </div>
        </div>
    </nav>
 
-    <div class="container-fluid">
-        This is quite empty (for now).
-    </div>
+   <div class="container-fluid">
+       <div class="row content-bg">
+           <!-- Form text -->
+           <div class="col-sm-3">
+                <img class="img-fluid" src="images/mail_blue.png"/>
+                <p>If you have something to ask us or simply want to give your feedback, please do so using this form!</p>
+                <p>Please fill in your email address also, if you want us to get back to you.</p>
+           </div>
+
+           <!-- Form -->
+           <div class="col-sm-9">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Fill if you want us to get back to you.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Feeback</label>
+                        <textarea class="form-control" id="comment" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-palette">Submit</button>
+                </form>
+           </div>
+        </div>
+   </div>
 
     <footer>
         <div class="text-center p-3">
